@@ -9,7 +9,7 @@ Summary:	Mail::SpamTest::Bayesian - Perl extension for Bayesian spam-testing
 Summary(pl):	Mail::SpamTest::Bayesian - rozszerzenie do wykrywania spamu metod± bayesowsk±
 Name:		perl-Mail-SpamTest-Bayesian
 Version:	0.02
-Release:	2
+Release:	3
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -18,7 +18,7 @@ BuildRequires:	perl >= 5.6
 BuildRequires:	perl(MIME::Parser) >= 5.406
 BuildRequires:	perl-BerkeleyDB >= 0.17
 %endif
-BuildRequires:	rpm-perlprov >= 3.0.3-26
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -47,7 +47,8 @@ wyst±pi³y; general.db przechowuje liczbê wiadomo¶ci.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 
 %{!?_without_tests:%{__make} test}
@@ -63,6 +64,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Change* README
-%dir %{perl_sitelib}/Mail/SpamTest
-%{perl_sitelib}/Mail/SpamTest/*.pm
+%dir %{perl_vendorlib}/Mail/SpamTest
+%{perl_vendorlib}/Mail/SpamTest/*.pm
 %{_mandir}/man3/*
