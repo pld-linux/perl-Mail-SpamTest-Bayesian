@@ -3,13 +3,13 @@
 # _without_tests - do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Mail
-%define	pnam	SpamTest-Bayesian
+%define		pdir	Mail
+%define		pnam	SpamTest-Bayesian
 Summary:	Mail::SpamTest::Bayesian - Perl extension for Bayesian spam-testing
 Summary(pl):	Mail::SpamTest::Bayesian - rozszerzenie do wykrywania spamu metod± bayesowsk±
 Name:		perl-Mail-SpamTest-Bayesian
 Version:	0.02
-Release:	1
+Release:	2
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -63,5 +63,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Change* README
+%dir %{perl_sitelib}/Mail/SpamTest
 %{perl_sitelib}/Mail/SpamTest/*.pm
 %{_mandir}/man3/*
