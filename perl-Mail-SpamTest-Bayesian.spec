@@ -10,7 +10,8 @@ Summary(pl):	Mail::SpamTest::Bayesian - rozszerzenie Perla do wykrywania spamu m
 Name:		perl-Mail-SpamTest-Bayesian
 Version:	0.02
 Release:	3
-License:	GPL/Artistic
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	b3656a57490c6ff342ba180da3ec9762
