@@ -18,7 +18,7 @@ BuildRequires:	perl >= 5.6
 BuildRequires:	perl(MIME::Parser) >= 5.406
 BuildRequires:	perl-BerkeleyDB >= 0.17
 %endif
-BuildRequires:	rpm-perlprov >= 3.0.3-26
+BuildRequires:	rpm-perlprov >= 4.0.2-104
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
