@@ -6,7 +6,7 @@
 %define		pdir	Mail
 %define		pnam	SpamTest-Bayesian
 Summary:	Mail::SpamTest::Bayesian - Perl extension for Bayesian spam-testing
-Summary(pl):	Mail::SpamTest::Bayesian - rozszerzenie Perla do wykrywania spamu metod± bayesowsk±
+Summary(pl.UTF-8):   Mail::SpamTest::Bayesian - rozszerzenie Perla do wykrywania spamu metodÄ… bayesowskÄ…
 Name:		perl-Mail-SpamTest-Bayesian
 Version:	0.02
 Release:	4
@@ -34,16 +34,16 @@ deleted; (2) tokenised.  The database files spam.db and nonspam.db
 contain lists of tokens and the number of messages in which they have
 occurred; general.db holds a message count.
 
-%description -l pl
-Ten modu³ jest implementacj± bayesowskiego algorytmu wykrywania spamu
+%description -l pl.UTF-8
+Ten moduÅ‚ jest implementacjÄ… bayesowskiego algorytmu wykrywania spamu
 opisanego przez Paula Grahama w <http://www.paulgraham.com/spam.html>.
 
-W skrócie: system jest uczony poprzez przedstawianie skrzynek z
-wiadomo¶ciami, o których wiadomo, ¿e zawieraj± spam lub go nie
-zawieraj±. S± one (1) zakodowane MIME, z usuniêtymi czê¶ciami
+W skrÃ³cie: system jest uczony poprzez przedstawianie skrzynek z
+wiadomoÅ›ciami, o ktÃ³rych wiadomo, Å¼e zawierajÄ… spam lub go nie
+zawierajÄ…. SÄ… one (1) zakodowane MIME, z usuniÄ™tymi czÄ™Å›ciami
 nietekstowymi; (2) ztokenizowane. Pliki baz danych spam.db i
-nonspam.db zawieraj± listy tokenów i liczby wiadomo¶ci, w których
-wyst±pi³y; general.db przechowuje liczbê wiadomo¶ci.
+nonspam.db zawierajÄ… listy tokenÃ³w i liczby wiadomoÅ›ci, w ktÃ³rych
+wystÄ…piÅ‚y; general.db przechowuje liczbÄ™ wiadomoÅ›ci.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
