@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	Mail
 %define		pnam	SpamTest-Bayesian
+%include	/usr/lib/rpm/macros.perl
 Summary:	Mail::SpamTest::Bayesian - Perl extension for Bayesian spam-testing
 Summary(pl.UTF-8):	Mail::SpamTest::Bayesian - rozszerzenie Perla do wykrywania spamu metodą bayesowską
 Name:		perl-Mail-SpamTest-Bayesian
@@ -15,6 +15,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	b3656a57490c6ff342ba180da3ec9762
+URL:		http://search.cpan.org/dist/Mail-SpamTest-Bayesian/
 BuildRequires:	perl-devel >= 1:5.8.0
 %if %{with tests}
 BuildRequires:	perl(MIME::Parser) >= 5.406
@@ -29,8 +30,8 @@ This module implements the Bayesian spam-testing algorithm described
 by Paul Graham at <http://www.paulgraham.com/spam.html>.
 
 In short: the system is trained by exposure to mailboxes of known spam
-and non-spam messages.  These are (1) MIME-decoded, and non-text parts
-deleted; (2) tokenised.  The database files spam.db and nonspam.db
+and non-spam messages. These are (1) MIME-decoded, and non-text parts
+deleted; (2) tokenised. The database files spam.db and nonspam.db
 contain lists of tokens and the number of messages in which they have
 occurred; general.db holds a message count.
 
