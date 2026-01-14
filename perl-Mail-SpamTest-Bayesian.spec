@@ -8,7 +8,7 @@ Summary:	Mail::SpamTest::Bayesian - Perl extension for Bayesian spam-testing
 Summary(pl.UTF-8):	Mail::SpamTest::Bayesian - rozszerzenie Perla do wykrywania spamu metodą bayesowską
 Name:		perl-Mail-SpamTest-Bayesian
 Version:	0.02
-Release:	4
+Release:	5
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
